@@ -5,7 +5,7 @@ describe('CommentList', () => {
     let component;
     beforeEach(() => {
         const props = { comments: ['New Comment', 'Other New Comment'] };
-        component = renderComponent(CommentList, null, props); // OBS! Switch parameter places for null and props?
+        component = renderComponent(CommentList, null, props); // OBS: state was renamed from props, and should've changed places with null if it was the actual props
     });
 
     it('shows an LI for each comment', () => {
